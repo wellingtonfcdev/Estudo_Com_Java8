@@ -27,6 +27,8 @@
 		<url/>
 	</scm>
 	<properties>
+		<projet.build.sourceEncoding>UTF-8</projet.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
