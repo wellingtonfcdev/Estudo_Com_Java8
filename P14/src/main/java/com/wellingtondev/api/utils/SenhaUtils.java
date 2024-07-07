@@ -28,5 +28,8 @@ public class SenhaUtils {
 	 * 
 	 * @return boolean
 	 */
-	
+	public static boolean senhaValida(String senha, String senhaEncoded) {
+		BCryptPasswordEncoder bCryptEncoder = new BCryptPasswordEncoder();
+		return bCryptEncoder.matches(senha, senhaEncoded);
+	}
 }
