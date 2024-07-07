@@ -1945,3 +1945,26 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 84
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-07-07 06:57:56.387
+!MESSAGE close() called when useCnt is already zero for Repository[C:\Users\wellington.costa\git\meu-primeiro-projeto\.git]
+
+!ENTRY org.eclipse.equinox.security 1 0 2024-07-07 07:03:21.636
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.egit.core 4 0 2024-07-07 07:03:49.566
+!MESSAGE An exception occurred during push on URI https://github.com/wellingtonfcdev/Estudo_Com_Java8.git: https://github.com/wellingtonfcdev/Estudo_Com_Java8.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/wellingtonfcdev/Estudo_Com_Java8.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:685)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:627)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1537)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2024-07-07 07:03:49.569
+!MESSAGE Can't connect to any repository: https://github.com/wellingtonfcdev/Estudo_Com_Java8.git (https://github.com/wellingtonfcdev/Estudo_Com_Java8.git: not authorized)
