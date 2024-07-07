@@ -1,0 +1,5 @@
+package com.wellingtondev.api.utils;
+
+public class SenhaUtils {
+
+}
