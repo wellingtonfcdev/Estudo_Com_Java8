@@ -7,4 +7,6 @@ import com.wellingtondev.api.entities.Empresa;
 public interface EmpresaRepository extends JpaRepository<Empresa, Long>{
 
 	Empresa findByCnpj(String cnpj);
+
+
 }
